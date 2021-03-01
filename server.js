@@ -1,19 +1,23 @@
-// required package/constructor/module
+// Dependencies
 const express = require('express');
-// Initalize the server, to tell it to listen for requests
+
+// Set PORT
+const PORT = process.env.PORT || 3000;
+
+// Set up express app
 const app = express();
-// tell our app (heroku) to use that port, if it has been set, and if not, default to port 80.
-const PORT = process.env.PORT || 3005;
 
-// Setup data parsing
-app.use(express.urlencoded({ extended: true }))
-app.use(express.json());
+// Access public files
 app.use(express.static('public'));
+app.use(express.urlencoded({ extended: true}));
+app.use(express.json());
 
+
+// Require Routes.js files to communicate when to generate api routes or html files
 require("./routes/apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
 
-// listen for server
+// Start server and begin listening
 app.listen(PORT, () => {
-  console.log(`API server now on port ${PORT}!`);
+    console.log("App is listening on PORT: " + PORT);
 });
