@@ -1,14 +1,13 @@
-// required path to pull html files
 var path = require("path");
 
 module.exports = (app) => {
   
-  // gets notes.html from public dir
+  // gets notes.html
   app.get("/notes", (req, res) => {
     res.sendFile(path.join(__dirname, "../public/notes.html"))
   })
 
-  // gets index.html file from public dir
+  // gets index.html file
   app.get("*", (req, res) => {
     res.sendFile(path.join(__dirname, "../public/index.html"))
   })
