@@ -10,6 +10,9 @@ https://drive.google.com/file/d/1lXQ2bA-rIQmppBoEPVc7WRrg0F-fLuAr/view
 ## Description
 Take notes and save them.
 
+## Deployment
+https://bstanfield1992-notetaker.herokuapp.com/
+
 ## Table of Contents
 - [Description](#description)
 - [Installation](#installation)
@@ -32,8 +35,7 @@ Take notes with ease
 
 ## Contributions
 Ben Stanfield
-## Tests
-node index.js
+
 ## Questions
 Email for any questions<br />
 <br />
