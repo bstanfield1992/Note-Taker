@@ -6,7 +6,6 @@
 ## Video
 https://drive.google.com/file/d/1lXQ2bA-rIQmppBoEPVc7WRrg0F-fLuAr/view
 
-![badge](https://img.shields.io/badge/license-MIT-brightgreen)<br />
 ## Description
 Take notes and save them.
 
@@ -23,7 +22,8 @@ https://bstanfield1992-notetaker.herokuapp.com/
 - [Questions](#questions)
 
 ## Installation
-Express
+Express 
+<br />
 uuidv4
 
 ## Usage
