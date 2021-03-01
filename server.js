@@ -2,7 +2,7 @@
 const express = require('express');
 
 // Set PORT
-const PORT = process.env.PORT || 3005;
+const PORT = process.env.PORT || 3000;
 
 // Set up express app
 const app = express();
